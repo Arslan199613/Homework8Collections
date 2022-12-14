@@ -1,18 +1,13 @@
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class Recipes {
+    private Product product;
     private double sum;
     private String nameOfRecipes;
-    private Set<Product> products;
-    Set<String> recipes;
 
     public Recipes(double sum, String nameOfRecipes) {
         this.sum = sum;
         this.nameOfRecipes = nameOfRecipes;
-        recipes = new HashSet<>();
-        products = new HashSet<>();
     }
 
     public double getSum() {
@@ -31,9 +26,7 @@ public class Recipes {
         this.nameOfRecipes = nameOfRecipes;
     }
 
-    public Set<String> getRecipes() {
-        return recipes;
-    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -51,11 +44,6 @@ public class Recipes {
     @Override
     public String toString() {
         return "Стоимость всех продуктов данного рецепта-" + sum + ", название рецепта" + nameOfRecipes;
-    }
 
-    public void addRecipes() {
-        if (recipes.contains("Рецепт 1")) {
-        }
-        throw new RuntimeException("В списке уже есть бананы,второй раз положить нельзя!");
     }
 }
