@@ -30,7 +30,7 @@ public class Main {
         double multiplication4 = orange.getAmountOfProduct() * orange.getPrice();
         System.out.println(multiplication4);
 
-        System.out.println("");
+        System.out.println("Задание 3");
 
 
         Map<String, Integer> humans = new HashMap<>();
