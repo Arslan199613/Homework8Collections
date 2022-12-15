@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Recipes {
-    private Product product;
+    Set<Product> products = new HashSet<>();
     private double sum;
     private String nameOfRecipes;
 
